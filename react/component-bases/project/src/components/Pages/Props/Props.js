@@ -8,6 +8,7 @@ const instructions = `Create a component that passes down a list of items to ren
 `;
 
 export const Props = () => {
+
   return (
     <div>
       <div className="Instructions__Title">
@@ -17,8 +18,10 @@ export const Props = () => {
         {instructions}
       </div>
       <ExerciseContainer>
-        <YourComponent />
+        <YourComponent/>
       </ExerciseContainer>
     </div>
   )
 }
+
+

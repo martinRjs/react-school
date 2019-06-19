@@ -56,3 +56,55 @@ body {
   padding-bottom: 20px;
   font-family: 'PT Mono', monospace;
 }
+
+
+.episode-container {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "header header header header"
+  "episodes episodes characters characters"
+  "episodes episodes characters characters";
+}
+
+.episode-container h1 {
+  grid-area: header;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.episode-container ul {
+  grid-area: episodes;
+  list-style: none;
+}
+
+.episode-container ul li  {
+  padding: 5px;
+}
+
+.episode-container ul li span:first-child  {
+  margin-right: 10px;
+}
+
+.episode-container ul li:hover {
+  color:blue;
+  cursor: pointer;
+}
+
+.characters-container{
+  grid-area: characters;
+  display:grid;
+  padding-right: 20px;
+  grid-gap:10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-content: space-between;
+  /* grid-template-rows: repeat(8, 100px);  */
+}
+
+.characters-container img {
+  width: 100%;
+}
+
+.characters-container h3 {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}

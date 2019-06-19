@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from 'react';
 import { ExerciseContainer } from '../../common/ExerciseContainer/ExerciseContainer';
-import { AjaxComponent } from './YourComponent';
+import { AjaxComponentContainer } from './YourComponent';
 
 const instructions = (
   <Fragment>
-    <p>
+    <div>
       This time we are going to be getting the data all on our own!
 
       Using Asynchronous calls, have `YourComponent` use the <a href="https://rickandmortyapi.com/documentation">Rick & Morty API</a> to:
@@ -15,7 +15,7 @@ const instructions = (
       </ul>
 
       Utilize the "common" components inside of the `/components/common` folder so we can later reutilize these for later exercises.
-      </p>
+      </div>
   </Fragment>
 );
 
@@ -32,7 +32,7 @@ export class Exercise extends Component {
           {instructions}
         </div>
         <ExerciseContainer>
-          <AjaxComponent />
+          <AjaxComponentContainer />
         </ExerciseContainer>
       </div>
     )

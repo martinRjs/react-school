@@ -39,7 +39,7 @@ export class LifecycleMethods extends Component {
           {instructions}
         </div>
         <ExerciseContainer>
-          <YourComponent data={this.state.data} getCharacter={this.getCharacterByRandomId} />
+          <YourComponent data={this.state.data} onSearch={this.getCharacterByRandomId} />
         </ExerciseContainer>
       </div>
     )

@@ -4,7 +4,7 @@ import { AjaxComponentContainer } from './AjaxComponentContainer';
 
 const instructions = (
   <Fragment>
-    <p>
+    <div>
       Using Asynchronous calls, have `YourComponent` use the <a href="https://rickandmortyapi.com/documentation">Rick & Morty API</a> to:
 
       <ul>
@@ -14,7 +14,7 @@ const instructions = (
 
       Unlike the previous exercise where we added all the logic and presentation to a single component, you should now split up this functionality
       to follow the Presentational / Container Component pattern.
-      </p>
+      </div>
   </Fragment>
 );
 
